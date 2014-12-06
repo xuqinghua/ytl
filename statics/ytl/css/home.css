@@ -257,29 +257,8 @@
 	display: inline;
 	margin-right: 20px;
 	width: 235px;
-	height: 157px;
+	height: 195px;
 	overflow: hidden;
-}
-.brand-list li{
-	float: left;
-	display: inline;
-	margin-right: 10px;
-	width: 320px;
-	height: 100px;
-	overflow: hidden;
-}
-.brand-list .last{
-	margin-right: 0px;
-}
-.brand-list{
-	width: 980px;
-	margin: 0 auto;
-}
-.brand-pic {
-	width: 320px;
-	height: 100px;
-	overflow: hidden;
-	position: relative;
 }
 .exhibition-list .last{
     margin-right: 0px;
