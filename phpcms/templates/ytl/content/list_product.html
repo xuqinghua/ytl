@@ -32,18 +32,7 @@
           {/pc}
 
         </ul>
-      </div>
-      <style type="text/css">
-      .productlist{}
-.productlist li{ list-style:none; line-height:30px; text-align:center; width:158px; padding-bottom:20px; float:left; margin-right:20px;}
-/*.productlist li { width:161px; height:153px;border:1px solid #e2e2e2;display:block;}*/
-.productlist li  img{width:156px; height:168px;border:1px solid #e2e2e2;display:block;}
-.productlist li.ptop { width:350px;}
-/*.productlist li.ptop a.img{ width:330px; height:357px;}*/
-.productlist li.ptop img{width:357px; height:388px;}
-.productlist li a.img img
-.padding-r11{padding-right: 11px !important;}
-</style>  
+      </div>  
       <div class="right-cont fR col-md-9">
             <div class="postHead clearfix">
               <h1 id="artibodyTitle">{$CATEGORYS[$catid]['catname']}</h1>
@@ -51,12 +40,12 @@
           <ul class="productlist">
 
 
-           {pc:content action="lists" status="99" catid="$catid" num="10" order="listorder ASC, inputtime DESC" page="$page"}
+           {pc:content action="lists" status="99" catid="$catid" num="12" order="listorder ASC, inputtime DESC" page="$page"}
            {php $i=1}
             {loop $data $r}
               <li class="<?php if($i%4==0){?>no-margin-r<?php }?>">
-                <a href="{$r[url]}"><img src="{$r[thumb]}"></a>
-                <a href="{$r[url]"><span>{$r[title]}</span></a>
+                <img src="{$r[thumb]}">
+                <span>{$r[title]}</span>
             </li>
             {php $i++}
             {/loop}

@@ -31,7 +31,7 @@
   <div class="wraper">
     <h4 class="wp clearfix">
       <p class="t">
-        <a href="#">旗下品牌</a>
+        旗下品牌
       </p>
     </h4>
     {pc:get sql="SELECT pictureurls FROM v9_picture_data WHERE id='3'" cache="3600" return="data"}
@@ -67,7 +67,7 @@
   <div class="wraper">
     <h4 class="wp clearfix">
       <p class="t">
-        <a href="#">展厅形象</a>
+        展厅形象
       </p>
     </h4>
     {pc:get sql="SELECT pictureurls FROM v9_picture_data WHERE id='2'" cache="3600" return="data"}
@@ -118,7 +118,7 @@
       <div class="ot_left no-border fl">
         {pc:content action="lists" status="99" catid="25" num="2" order="listorder ASC, inputtime DESC"}
         {loop $data $r}
-        <a href="{$r[url]}" class="f-link" title="{$r[title]}" {title_style($r[style])}>{$r[title]}</a>
+        <a href="{$r[url]}" class="f-link" title="{$r[title]}" {title_style($r[style])}>{$r[content]}</a>
         {/loop}
         {/pc}
       </div>

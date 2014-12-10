@@ -118,13 +118,19 @@
 	.focusBox .num li span { z-index: 1; background: black; filter: alpha(opacity=50); opacity: 0.5; }
 	.focusBox .num li.on a,.focusBox .num a:hover{ background:#f60;  }
 
-.productlist{}
-.productlist li{ list-style:none; line-height:30px; text-align:center; width:163px; padding-bottom:20px; float:left; padding-right:9px;}
-.productlist li a.img{ width:161px; height:153px;border:1px solid #e2e2e2;display:block;}
-.productlist li a.img img{width:161px; height:153px;}
-.productlist li.ptop { width:332px;}
-.productlist li.ptop a.img{ width:330px; height:357px;}
-.productlist li.ptop a.img img{width:330px; height:357px;}
+.productlist li{ 
+list-style: none;
+line-height: 30px;
+text-align: center;
+width: 168px;
+padding-bottom: 20px;
+float: left;
+margin-right: 14px;
+}
+.productlist li  img{width:168px; height:168px;border:1px solid #e2e2e2;display:block;}
+.productlist li.ptop img{width:357px; height:388px;}
+.productlist li a.img img
+.padding-r11{padding-right: 11px !important;}
 
 	
 .Brandjoined{ margin-top:20px;}
