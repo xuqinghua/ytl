@@ -10,16 +10,16 @@ width: 20%;
 }
 .sub-menu-list{
 	border: 1px solid #CDB978;
-	/*border-right: 0px;*/
 }
 .sub-menu-list li{
-	list-style: none;
 	border-bottom: 1px solid #d7d7d7;
-	/*padding-left: 15px;*/
 	position: relative;
 	height: 34px;
 	line-height: 32px;
 	text-align: center;
+}
+.sub-menu-list li a{
+	display: block;
 }
 .active{
 	background: #CDB978;
