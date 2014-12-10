@@ -51,10 +51,10 @@
           <ul class="productlist">
 
 
-           {pc:content action="lists" status="99" catid="$catid" num="15" order="listorder ASC, inputtime DESC" page="$page"}
+           {pc:content action="lists" status="99" catid="$catid" num="10" order="listorder ASC, inputtime DESC" page="$page"}
            {php $i=1}
             {loop $data $r}
-              <li class="{if $i==1}ptop{/if} <?php if(in_array($i,array(3,5,9,13,17,21))){ ?>no-margin-r<?php }?>">
+              <li class="<?php if($i%4==0){?>no-margin-r<?php }?>">
                 <a href="{$r[url]}"><img src="{$r[thumb]}"></a>
                 <a href="{$r[url]"><span>{$r[title]}</span></a>
             </li>

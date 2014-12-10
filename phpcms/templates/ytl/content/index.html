@@ -118,7 +118,7 @@
       <div class="ot_left no-border fl">
         {pc:content action="lists" status="99" catid="25" num="2" order="listorder ASC, inputtime DESC"}
         {loop $data $r}
-        <a href="{$r[url]}" class="f-link" title="{$r[title]}" {title_style($r[style])}></a>
+        <a href="{$r[url]}" class="f-link" title="{$r[title]}" {title_style($r[style])}>{$r[title]}</a>
         {/loop}
         {/pc}
       </div>
