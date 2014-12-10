@@ -42,7 +42,7 @@
            {php $i=1}
             {loop $data $r}
               <li class="<?php if($i%4==0){?>no-margin-r<?php }?>">
-                <a href="{$r[url]}"><img src="{$r[thumb]}"></a>
+                <a class="product-pic" href="{$r[url]}"><img src="{$r[thumb]}"></a>
                 <a href="{$r[url]}"><span>{$r[title]}</span></a>
             </li>
             {php $i++}

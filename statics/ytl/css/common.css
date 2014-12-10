@@ -474,7 +474,7 @@ a:hover {
   top: 48px;
   width: 102px;
   background: rgba(157, 137, 72, 0.5) none repeat scroll 0 0 !important;
-  padding: 5px 30px;
+  padding: 5px 30px 8px;
   display: none;
   filter: Alpha(opacity=70); /* Mozilla */
   background: #9e0024;
