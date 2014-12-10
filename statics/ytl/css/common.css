@@ -187,9 +187,9 @@ line-height: 21px;
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #2a6496;
-  background-color: #eee;
-  border-color: #ddd;
+  color: #fff;
+  background-color: #CDB978;
+  border-color: #CDB978;
 }
 .pagination > .active > a,
 .pagination > .active > span,

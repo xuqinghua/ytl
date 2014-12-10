@@ -116,11 +116,16 @@
       {/pc}
       </div>
       <div class="ot_left no-border fl">
-        {pc:content action="lists" status="99" catid="25" num="2" order="listorder ASC, inputtime DESC"}
+        {pc:get sql="SELECT * FROM v9_page where catid=33"}
+        {loop $data $key $val}
+        {$val[content]}
+        {/loop}
+        {/pc}
+        <!-- {pc:content action="lists" status="99" catid="25" num="2" order="listorder ASC, inputtime DESC"}
         {loop $data $r}
         <a href="{$r[content]}" class="f-link" title="{$r[title]}" {title_style($r[style])}>{$r[title]}</a>
         {/loop}
-        {/pc}
+        {/pc} -->
       </div>
     </div>
   </div>
