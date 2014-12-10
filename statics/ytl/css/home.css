@@ -243,6 +243,10 @@
 	overflow: hidden;
 	position: relative;
 }
+.exhibition-pic img{
+	width: 235px;
+	height: 157px;
+}
 .exhibition-list h3 {
 	font-size: 14px;
 	font-weight: normal;
@@ -290,4 +294,40 @@ padding-left: 78px;
 }
 .no-border {
 border: none;
+}
+
+
+.brand-box{
+	margin: 40px auto;
+}
+.brand-pic a{
+	display: block;
+	border: 1px solid #6d6d6d;
+}
+.brand-pic a:hover{
+	box-shadow: 4px 0px 11px #949494
+}
+.brand-pic img{
+	width: 100%;
+	height: 72px;
+}
+.brand-list li{
+	margin-left: 20px;
+	width: 304px;
+	float: left;
+}
+.f-link{
+	width: 240px;
+	margin: 20px auto;
+	padding: 21px 0;
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #9d8948;
+}
+.f-link:hover{
+	background: #9d8948;
+	color: #fff !important;
 }

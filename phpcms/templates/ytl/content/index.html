@@ -31,7 +31,43 @@
   <div class="wraper">
     <h4 class="wp clearfix">
       <p class="t">
-        <a href="enterprise.html" target="_blank">公司形象</a>
+        <a href="#">旗下品牌</a>
+      </p>
+    </h4>
+    {pc:get sql="SELECT pictureurls FROM v9_picture_data WHERE id='3'" cache="3600" return="data"}
+
+    <div class="brand-box clearfix">
+      <ul class="brand-list">
+
+    {loop $data $val}
+      <?php
+          $pictureurls=$val['pictureurls'];
+          $pictureurls=string2array($pictureurls);
+          $i=1;
+          $num=count($pictureurls);
+      ?>
+      {loop $pictureurls $pic}
+        <li <?php if($num==$i){?>class='last'<?php }?> >
+          <div class="brand-pic">
+            <a href="{$pic[alt]}">
+              <img  src="{$pic[url]}" alt="">
+            </a>
+          </div>
+        </li>
+        {php $i++}
+      {/loop}
+    {/loop}
+        
+      </ul>
+    </div>
+    {/pc}
+  </div>
+
+
+  <div class="wraper">
+    <h4 class="wp clearfix">
+      <p class="t">
+        <a href="#">展厅形象</a>
       </p>
     </h4>
     {pc:get sql="SELECT pictureurls FROM v9_picture_data WHERE id='2'" cache="3600" return="data"}
@@ -49,13 +85,8 @@
       {loop $pictureurls $pic}
         <li <?php if($num==$i){?>class='last'<?php }?> >
           <div class="exhibition-pic">
-            <a href="">
-              <img width="235" height="157" src="{$pic[url]}" alt="{$pic[alt]}">
-            </a>
+              <img src="{$pic[url]}" alt="{$pic[alt]}">
           </div>
-          <h3>
-            <a href="#">展台照片1</a>
-          </h3>
         </li>
         {php $i++}
       {/loop}
@@ -63,7 +94,6 @@
         
       </ul>
     </div>
-
     {/pc}
   </div>
 
@@ -86,11 +116,9 @@
       {/pc}
       </div>
       <div class="ot_left no-border fl">
-        <div class="drlogo"></div>
-        <h3>最新新闻&活动</h3>
-        {pc:content action="lists" status="99" catid="25" num="4" order="listorder ASC, inputtime DESC"}
+        {pc:content action="lists" status="99" catid="25" num="2" order="listorder ASC, inputtime DESC"}
         {loop $data $r}
-        <p><a href="{$r[url]}" title="{$r[title]}" {title_style($r[style])}>{str_cut($r[title],60,'')}</a></p>
+        <a href="{$r[url]}" class="f-link" title="{$r[title]}" {title_style($r[style])}></a>
         {/loop}
         {/pc}
       </div>
